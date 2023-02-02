@@ -1,0 +1,81 @@
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    background-color: white;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+li a{
+    height: 20rem;
+    width: 15rem;
+    border: 1px solid whitesmoke;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: black;
+}
+
+li a:hover{
+    opacity: 0.9;
+    cursor: pointer;
+    color: rgb(54, 181, 185);
+}
+
+li a img{
+    object-fit: cover;
+    height: 10;
+}
+.content{
+    margin-top: 0.3rem 1fr;
+    padding: 0.5rem 1rem;
+    position: relative;
+    height: 7rem;
+    background: white;
+}
+
+.name{
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.price{
+    position: absolute;
+    bottom: 0;
+    left: 0.9rem;
+    background: white;
+    padding: 0.3rem 100% 0 0;
+    color: rgb(250, 45, 45);
+    margin-top: 0.7rem;
+    font-size: 1.1rem;
+}
+
+.recommend{
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    margin-left: 6rem;
+    text-align: left;
+    color: rgb(245, 78, 36);
+}
+
+.for-you{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.body{
+    background: rgb(235, 235, 235);
+    padding-bottom: 50px;
+}

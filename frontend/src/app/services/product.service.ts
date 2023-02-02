@@ -11,4 +11,8 @@ export class ProductService {
   getAll():Product[]{
     return product_ex;
   }
+
+  getAllProductBySearch(searchTerm:string){
+    return this.getAll().filter(product_ex => product_ex.name.toLowerCase().includes(searchTerm.toLowerCase()))
+  }
 }

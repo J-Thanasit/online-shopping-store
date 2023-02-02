@@ -19,12 +19,19 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/pages/home/home.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+import { NgImageSliderModule } from 'ng-image-slider';
+import { SearchComponent } from './components/partials/search/search.component';
+import { CarouselComponent } from './components/partials/carousel/carousel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    SearchComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,6 +49,8 @@ import { HomeComponent } from './components/pages/home/home.component';
     MatTableModule,
     MatBadgeModule,
     MatSnackBarModule,
+    NgbModule,
+    NgImageSliderModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

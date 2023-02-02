@@ -1,13 +1,22 @@
+<div class="body">
+    <div class="recommend">
+        Flash Sale!
+    </div>
+    <app-carousel></app-carousel>
+</div>
+<div class="for-you">
+    สินค้าแนะนำสำหรับคุณ
+</div>
 <ul>
     <li *ngFor="let product of products">
         <a>
-            <img [src]="product.imageUrl" [alt]="product.name"/>
+            <img class="pb-3 flex mb-1 mx-auto" [src]="product.imageUrl"/>
             <div class="content">
                 <div class="name">
                     {{product.name}}
                 </div>
                 <div class="price">
-                    {{product.price}}
+                    {{product.price | currency:'฿'}}
                 </div>
             </div>
         </a>
