@@ -1,24 +1,26 @@
-<div class="body">
-    <div class="recommend">
-        Flash Sale!
+<div>
+    <div class="body">
+        <div class="flashsale">
+            <img src="assets/flashsale.png"/>
+        </div>
+        <app-carousel></app-carousel>
     </div>
-    <app-carousel></app-carousel>
-</div>
-<div class="for-you">
-    สินค้าแนะนำสำหรับคุณ
-</div>
-<ul>
-    <li *ngFor="let product of products">
-        <a>
-            <img class="pb-3 flex mb-1 mx-auto" [src]="product.imageUrl"/>
-            <div class="content">
-                <div class="name">
-                    {{product.name}}
+    <div class="for-you">
+        สินค้าแนะนำสำหรับคุณ
+    </div>
+    <ul>
+        <li *ngFor="let product of products">
+            <a routerLink="/product/{{ product.id }}">
+                <img class="pb-3 flex mb-1 mx-auto" [src]="product.imageUrl" [alt]="product.name"/>
+                <div class="content">
+                    <div class="name">
+                        {{product.name}}
+                    </div>
+                    <div class="price">
+                        {{product.price | currency:'฿'}}
+                    </div>
                 </div>
-                <div class="price">
-                    {{product.price | currency:'฿'}}
-                </div>
-            </div>
-        </a>
-    </li>
-</ul>
+            </a>
+        </li>
+    </ul>
+</div>

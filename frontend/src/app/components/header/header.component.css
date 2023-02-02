@@ -1,4 +1,10 @@
 .mat-toolbar{
-    background: #f37b44;
-    color: #fff;
+    background: gray;
+}
+
+.homelogo{
+    width: 180px;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
 }

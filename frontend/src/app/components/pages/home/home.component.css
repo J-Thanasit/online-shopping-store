@@ -1,26 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
 ul{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     list-style-type: none;
-    padding: 0;
-    background-color: white;
     margin-left: 5rem;
     margin-right: 5rem;
-    font-family: 'Kanit', sans-serif;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 
 li a{
     height: 20rem;
     width: 15rem;
-    border: 1px solid whitesmoke;
+    box-shadow: 2px 2px 4px #000000;
     border-radius: 1rem;
     margin: 0.5rem;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     color: black;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-direction: column;
 }
 
 li a:hover{
@@ -32,17 +37,18 @@ li a:hover{
 li a img{
     object-fit: cover;
     height: 10;
+    margin-bottom: -0.5rem;
 }
 .content{
     margin-top: 0.3rem 1fr;
-    padding: 0.5rem 1rem;
+    padding: 0 1rem;
     position: relative;
-    height: 7rem;
+    height: 6rem;
     background: white;
 }
 
 .name{
-    display: inline-block;
+    display: block;
     font-size: 1rem;
 }
 
@@ -51,31 +57,36 @@ li a img{
     bottom: 0;
     left: 0.9rem;
     background: white;
-    padding: 0.3rem 100% 0 0;
+    padding: 0.3rem 100% 1rem 0;
     color: rgb(250, 45, 45);
     margin-top: 0.7rem;
     font-size: 1.1rem;
 }
 
-.recommend{
-    font-size: 3rem;
-    font-weight: bold;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    margin-left: 6rem;
-    text-align: left;
-    color: rgb(245, 78, 36);
+.flashsale{
+    padding-top: 10px;
+    margin-left: 5rem;
+    width: 200px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+
 }
 
 .for-you{
     font-size: 2rem;
     font-weight: bold;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
+    background-color: coral;
+    color: black;
+    font-family: 'Kanit', sans-serif;
+    max-width: 100;
+    width: auto;
 }
 
 .body{
-    background: rgb(235, 235, 235);
+    background: rgb(236, 236, 236);
     padding-bottom: 50px;
 }

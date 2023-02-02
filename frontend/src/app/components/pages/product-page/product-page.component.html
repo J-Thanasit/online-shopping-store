@@ -1,0 +1,16 @@
+<div class="container">
+    <img [src]="product.imageUrl" [alt]="product.name"/>
+    <div class="detials">
+        <div class="header">
+            <span class="name">
+                {{ product.name }}
+            </span>
+        </div>
+        <div class="price">
+            {{ product.price | currency:'฿'}}
+        </div>
+        <button>
+            เพิ่มลงในตะกร้า
+        </button>
+    </div>
+</div>

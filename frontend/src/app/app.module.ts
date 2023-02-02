@@ -24,6 +24,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { SearchComponent } from './components/partials/search/search.component';
 import { CarouselComponent } from './components/partials/carousel/carousel.component';
+import { ProductPageComponent } from './components/pages/product-page/product-page.component';
+
 
 @NgModule({
   declarations: [
@@ -32,6 +34,7 @@ import { CarouselComponent } from './components/partials/carousel/carousel.compo
     HomeComponent,
     SearchComponent,
     CarouselComponent,
+    ProductPageComponent,
   ],
   imports: [
     BrowserModule,

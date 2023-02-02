@@ -13,6 +13,10 @@ export class ProductService {
   }
 
   getAllProductBySearch(searchTerm:string){
-    return this.getAll().filter(product_ex => product_ex.name.toLowerCase().includes(searchTerm.toLowerCase()))
+    return this.getAll().filter(products => products.name.toLowerCase().includes(searchTerm.toLowerCase()))
+  }
+
+  getProductById(productId:string):Product{
+    return this.getAll().find(products => products.id == productId) ?? new Product();
   }
 }
