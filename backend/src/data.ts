@@ -1,0 +1,73 @@
+export const product_ex: any[] = [
+    {
+        id:'1',
+        name:'iPhone 14 Pro Max',
+        price:42990,
+        imageUrl:'assets/item-1.png',
+    },
+    {
+        id:'2',
+        name:'Skateboard',
+        price:2990,
+        imageUrl:'assets/item-2.png',
+    },
+    {
+        id:'3',
+        name:'Helmet',
+        price:790,
+        imageUrl:'assets/item-3.png',
+    },
+    {
+        id:'4',
+        name:'T-Shirt',
+        price:199,
+        imageUrl:'assets/item-4.png',
+    },
+    {
+        id:'5',
+        name:'Keyboard',
+        price:2790,
+        imageUrl:'assets/item-5.png',
+    },
+    {
+        id:'6',
+        name:'Steel Cup',
+        price:390,
+        imageUrl:'assets/item-6.png',
+    },{
+        id:'7',
+        name:'iPhone 14 Pro Max',
+        price:42990,
+        imageUrl:'assets/item-1.png',
+    },
+    {
+        id:'8',
+        name:'Skateboard',
+        price:2990,
+        imageUrl:'assets/item-2.png',
+    },
+    {
+        id:'9',
+        name:'Helmet',
+        price:790,
+        imageUrl:'assets/item-3.png',
+    },
+    {
+        id:'10',
+        name:'T-Shirt',
+        price:199,
+        imageUrl:'assets/item-4.png',
+    },
+    {
+        id:'11',
+        name:'Keyboard',
+        price:2790,
+        imageUrl:'assets/item-5.png',
+    },
+    {
+        id:'12',
+        name:'Steel Cup',
+        price:390,
+        imageUrl:'assets/item-6.png',
+    }
+]

@@ -8,15 +8,15 @@ import { Product } from '../shared/models/products';
 export class ProductService {
 
   constructor() { }
-  getAll():Product[]{
+  public getAll():Product[]{
     return product_ex;
   }
 
-  getAllProductBySearch(searchTerm:string){
+  public getAllProductBySearch(searchTerm:string){
     return this.getAll().filter(products => products.name.toLowerCase().includes(searchTerm.toLowerCase()))
   }
 
-  getProductById(productId:string):Product{
+  public getProductById(productId:string):Product{
     return this.getAll().find(products => products.id == productId) ?? new Product();
   }
 }
